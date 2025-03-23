@@ -43,17 +43,17 @@ Since Zed is open-source, we can take a look at how it handles prompting and wha
 
 1. `assistant_system_prompt.hbs`: Used as the system prompt for the assistant.
 2. `content_prompt.hbs`: Used for generating content in the editor.
-3. `project_slash_command.hbs`: Used for generating search queries to attempt to retrieve relevant documents to a question about the codebase.
-4. `suggest_edits.hbs`: Used for generating the suggested edits. Tries to ensure that the edits are returned in an XML format.
+3. `project_slash_command.hbs`: Used for generating search queries to retrieve relevant documents to a question about the codebase.
+4. `suggest_edits.hbs`: Used for generating suggested edits. Ensures that the edits are returned in an XML format.
 5. `terminal_assistant_prompt.hbs`: Used for generating terminal commands.
 
 Of course, all of these templates are overridable. Users can customize them to fit their specific needs but this is not recommended as this could accidentally lead to missing out on new features added in future updates.
 
 ### Core Architecture
 
-Outside of ML, Zed's boasts innovative architectural features that lead to its performance and functionality.
+Outside of ML, Zed boasts innovative architectural features that lead to its performance and functionality.
 
-1. **GPUI Framework**: Central to Zed's performance is GPUI, a custom hardware-accelerated UI framework which directly leverages the GPU to render the editor interface. This eliminates layers of abstraction, resulting in unmatched speed and directly undercuts other editors that rely on slower frameworks such as Electron or Qt.
+1. **GPUI Framework**: Central to Zed's performance is GPUI, a custom hardware-accelerated UI framework which directly leverages the GPU to render the editor interface. This eliminates layers of abstraction that add overhead, directly undercutting other editors that rely on slower frameworks such as Electron or Qt.
 2. **Language Processing**: Zed employs advanced language processing techniques to enhance its usability. This includes the use of Tree-sitter for syntax highlighting and code structure comprehension, as well as the Language Server Protocol (LSP) for intelligent code features like autocomplete and error detection.
 
 ## Engineering Decisions and Design Choices
