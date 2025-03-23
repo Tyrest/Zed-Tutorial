@@ -95,7 +95,23 @@ The project's GitHub repository shows an extensive [continuous integration workf
 
 ## Zed in Action
 
-TODO: Demonstrate Zed's capabilities by creating a static webpage and adding it to my blog tylerho.dev
+To demonstrate Zed's capabilities, let's create a simple static webpage and add it to my blog [tylerho.dev](https://tylerho.dev).
+
+First, I asked the assistant to generate a svelte file that is able to display the content in the markdown file. Adding all these files was a simple `/tab` given that I had all the context tabs already open.
+
+![assistant](images/Assistant.png)
+
+Once the assistant generated the file, I simply asked it to apply the changes since the in-line assistant has access to all the context from the dedicated chat window.
+
+![apply](images/Apply.png)
+
+Since it added a few features that I didn't need, I deleted some of the unnecessary parts but then realized that the subtitle was not as catchy as I had hoped. Since I'm not a subtitle-writing expert, I decided to call my alter-ego Tyler-Ho-Dev to help me come up with a better one. Giving him access to the file was as simple as calling him on Zed and sharing my screen. His changes were not only instantly applied in my editor as can be seen in the screenshot below, but also reflected in the live preview of the webpage on my local machine.
+
+![collaboration](images/Collaboration.png)
+
+This blog post is cross-posted using the code generated above [here](https://tylerho.dev/projects/zed).
+
+The whole process was seamless and efficient, keeping the power in my hands at all times but also allowing me to pull from the expertise of bleeding-edge LLMs and fellow developers.
 
 ## Conclusion
 
